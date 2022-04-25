@@ -57,6 +57,14 @@
               ],
               "outputHashing": "all"
             },
+            "dev": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.dev.ts"
+                }
+              ]
+            },
             "development": {
               "buildOptimizer": false,
               "optimization": false,
@@ -74,11 +82,11 @@
             "production": {
               "browserTarget": "Learning:build:production"
             },
-            "development": {
-              "browserTarget": "Learning:build:development"
+            "dev": {
+              "browserTarget": "Learning:build:dev"
             }
           },
-          "defaultConfiguration": "development"
+          "defaultConfiguration": "dev"
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
